@@ -10,15 +10,11 @@ radio.onReceivedValue(function (name, value) {
     } else if (name == "false") {
     	
     }
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        `)
 })
 radio.setGroup(4)
+basic.showIcon(IconNames.Yes)
+basic.pause(1000)
+basic.clearScreen()
 basic.forever(function () {
 	
 })
